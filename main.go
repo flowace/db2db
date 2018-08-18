@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello db2db")
+	fmt.Println("Hello db2db...")
 }
