@@ -28,13 +28,22 @@ var cfgFile string
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "db2db",
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Short: "Blazing fast database migration, encryption and modification tool",
+	Long: `db2db is witten to migrate huge SQL databases from one enviromment to another
+while applying encryption on certain columns and certain tables. It can also ommit some
+columns and you can also apply some basic function on the dabase while migrating 
+it which makes one of kind of a kind on its own. You can also migrate to multiple databases
+from one source or import from multiple database into one database. Currently we are supporting
+the following databases
+	- MySQL
+	- PostgesSQL
+	- Oracle DB
+	- Cockroach DB
+	- MariaDB
+You can also use CSV file or excel sheet to upload into a database or even on a multiple database
+at the same time. This uses Go's awesome coroutines to achieve concurrency. This achieves extraordiany
+performance and speed.
+	`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	//	Run: func(cmd *cobra.Command, args []string) { },
