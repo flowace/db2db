@@ -17,5 +17,5 @@ package main
 import "db2db/dispatch"
 
 func main() {
-	cmd.Execute()
+	dispatch.Execute()
 }

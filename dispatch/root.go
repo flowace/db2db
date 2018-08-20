@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package cmd
+package dispatch
 
 import (
 	"fmt"
@@ -36,9 +36,9 @@ it which makes one of kind of a kind on its own. You can also migrate to multipl
 from one source or import from multiple database into one database. Currently we are supporting
 the following databases
 	- MySQL
-	- PostgesSQL
-	- Oracle DB
-	- Cockroach DB
+	- PostgreSQL
+	- Sqlite3
+	- SQL Server
 	- MariaDB
 You can also use CSV file or excel sheet to upload into a database or even on a multiple database
 at the same time. This uses Go's awesome coroutines to achieve concurrency. This achieves extraordiany
