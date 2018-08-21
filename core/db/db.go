@@ -14,6 +14,8 @@ type Product struct {
 	Price uint
 }
 
+
+
 // TableName setting the table name
 func (Product) TableName() string {
 	return "allProducts"
@@ -25,13 +27,14 @@ func main() {
 		panic("failed to connect database")
 	}
 	defer db.Close()
-	db.AutoMigrate(&Product{})
+	// db.AutoMigrate(&Product{})
 	// db.CreateTable(&Mayukh{})
-	db.Create(&Product{Code: "L1212", Price: 1000})
+	// db.Create(&Product{Code: "L1212", Price: 4000})
 	// db.Commit()
 	// Reading the database
-	var product Product
-	db.First(&product, 1)
-	fmt.Println(product.Code)
-	fmt.Println(product.Price)
+	var product []Product
+	db.Find(&product, "code = ?", "L1212")
+	for _, product := range product {
+		fmt.Println(product.Code, product.Price)
+	}
 }

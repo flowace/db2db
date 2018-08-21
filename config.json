@@ -1,0 +1,68 @@
+{
+    "operations": [
+        "download",
+        "upload"
+    ],
+    "download": {
+        "domains": {
+            "sources": [
+                "sqlite"
+            ],
+            "destinations": [
+                "csv"
+            ]
+        },
+        "connections": {
+            "sources": {
+                "1": {
+                    "files": "test.db",
+                    "paths": "/Users/mayukhsarkar/Documents/Codes/go/src/db2db",
+                    "tables": [
+                        "products"
+                    ]
+                }
+            },
+            "destinations": {
+                "1": {
+                    "files": [
+                        "test.csv"
+                    ],
+                    "paths": [
+                        "/Users/mayukhsarkar/Documents/Codes/go/src/db2db"
+                    ]
+                }
+            }
+        }
+    },
+    "upload": {
+        "domains": {
+            "sources": [
+                "csv"
+            ],
+            "destinations": [
+                "sqlite"
+            ]
+        },
+        "connections": {
+            "sources": {
+                "1": {
+                    "files": [
+                        "test.csv"
+                    ],
+                    "paths": [
+                        "/Users/mayukhsarkar/Documents/Codes/go/src/db2db"
+                    ]
+                }
+            },
+            "destinations": {
+                "1": {
+                    "files": "test2.db",
+                    "paths": "/Users/mayukhsarkar/Documents/Codes/go/src/db2db",
+                    "tables": [
+                        "products"
+                    ]
+                }
+            }
+        }
+    }
+}
