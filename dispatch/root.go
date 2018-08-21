@@ -40,6 +40,9 @@ the following databases
 	- Sqlite3
 	- SQL Server
 	- MariaDB
+	- CockroachDB
+	- Firebird
+	- Sybase
 You can also use CSV file or excel sheet to upload into a database or even on a multiple database
 at the same time. This uses Go's awesome coroutines to achieve concurrency. This achieves extraordiany
 performance and speed.

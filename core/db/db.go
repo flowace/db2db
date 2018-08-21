@@ -14,8 +14,6 @@ type Product struct {
 	Price uint
 }
 
-
-
 // TableName setting the table name
 func (Product) TableName() string {
 	return "allProducts"
