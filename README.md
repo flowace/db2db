@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/flowace/db2db.svg?branch=master)](https://travis-ci.com/flowace/db2db)
 
 ## Load Testing Result
-> All the testing was performed in Dual core Mac OSX system of **8GB** of RAM and with read dataset
+> All the testing was performed in Dual core Mac OSX system of **8GB** of RAM and with real world dataset
 
 |Test #| Data Source Type | Data Destination Type | Remote |Size  | Rows|Columns|Execution Time|Concurrent|
 |---|---|---|---|---|---|---|---|---|
