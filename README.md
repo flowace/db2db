@@ -2,7 +2,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/flowace/db2db)](https://goreportcard.com/report/github.com/flowace/db2db)
 
 ## Load Testing Result
-> All the testing was performed in Dual core Mac OSX system of **8GB** of RAM and with real world dataset
+> All the testing was performed in Dual core Mac OSX system of **8GB** of RAM and with real world dataset of Spain Weather dept.
 
 |Test #| Data Source Type | Data Destination Type | Remote |Size  | Rows|Columns|Execution Time|Concurrent|
 |---|---|---|---|---|---|---|---|---|
