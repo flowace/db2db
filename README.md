@@ -7,6 +7,7 @@
 |Test #| Data Source Type | Data Destination Type | Remote |Size  | Rows|Columns|Execution Time|Concurrent|
 |---|---|---|---|---|---|---|---|---|
 |1|  SQLite database | CSV| No  | ~900mb  | 7.7 millions  |  2 | 102.726 sec|No|
+|1|  SQLite database | CSV| No  | ~900mb  | 7.7 millions  |  20 | 396.00s sec|Yes (10 threads) |
 
 ## Dependencies
 
